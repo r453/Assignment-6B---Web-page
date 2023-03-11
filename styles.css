@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    background-color: #444040;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+  /*Tehtävänannossa ei ollut tätä erikseen mutta mallivastauksessa oli myös horisontaalinen navigointipalkki*/
+  #vaaka-navigointi {
+    display: inline;
+    clear: both;
+    float:none;
+    text-align: center;
+    height: 10px;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  #two-different-columns {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  div {
+    float: left;
+    height: 300px;
+    padding: 0px;
+  }
+  #eka {
+    width: 25%;
+    background-color: #ccc;
+  }
+  #toka {
+    width: 75%;
+  }
+
+  nav ul {
+    /* Tehtävänannossa ei mainittu erikseen mutta esimerkki sivussa linkkien pallukat oli poistettu */
+    list-style-type: none;
+    padding: 1em;
+  }
+
+  /*And lastly, lets modify the main navigation and create a pseudo-class effect to your main navigation links. The effect you add, should change the color of the link to red when you are hovering over it.*/
+  a:hover {
+    color: red;
+  }
+  /* Tehtävänannossa ei mainittu erikseen mutta esimerkki sivussa linkkien alleviivaus oli disabloitu */
+  a:link {
+    text-decoration: none;
+  }
+
+  article {
+    float: left;
+    /*Define margin and padding-properties to different elements and try to enhance design of your site. */
+    padding-left: 1em;
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Koodin osia ja tekniikoita lainattu osin tutoriaalista: 
+  
+  HTML layout. w3schools.com n/a. Noudettu 10.3.2023 osoitteesta 
+  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float 
+  
+  */
